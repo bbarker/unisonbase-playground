@@ -1,0 +1,56 @@
+find Num
+namespace .mylib
+Float.sqrt 16
+find sqrt
+find.all
+find
+namespace .base
+find
+.namespace .base
+namespace .base.math
+namespace .math
+builtins.update
+update
+cd .mylib
+update
+help
+push git@github.com:bbarker/unisonbase-playground.git
+pull git@github.com:bbarker/unisonbase-playground.git
+push git@github.com:bbarker/unisonbase-playground.git
+find
+cd .mylib.releases.v1
+copy.namespace .mylib .mylib.releases.v1
+copy.namespace mylib mylib.releases.v1
+test
+update
+test
+update
+test
+test
+update
+namespace mylib
+find foldL
+find foldLeft
+namespace .
+find foldLeft
+edit square
+help test
+test
+find
+move.term .tests.square.prop1  tests.square.prop1 
+move.term tests.square.prop1  tests.square.prop1 
+move.term .tests.square.ex1 tests.square.ex1
+find
+move.term .double double
+move.term .square square
+namespace mylib
+namespace
+add
+help fork
+find ==
+view base.List.foldl
+view foldl
+view 3
+find : [a] -> [a]
+find : [a] -> a
+ pull git@github.com:unisonweb/unisonbase.git

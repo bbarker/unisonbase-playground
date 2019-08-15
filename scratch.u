@@ -1,0 +1,33 @@
+use .base
+use .base.Universal
+use .base.List
+use .Nat +
+
+square : Nat -> Nat
+square x = sum (map (x -> x * 2 + 1) (range 0 x))
+
+sum : [Nat] -> Nat
+sum = foldl (+) 0
+
+double: Nat -> Nat
+double x = x + x
+
+> square 4 + double 2
+
+> Float.sqrt 16.0
+
+use test.v1
+test> tests.square.ex1 = run(expect (square 4 == 16))
+
+test> tests.square.prop1 =
+  go _ = a = !nat
+         b = !nat
+         expect (square a * square b == square (a * b))
+  runs 100 go
+
+-- A comment
+
+> base.List.reverse [1,2,3,4]
+> 5.0 / 2.0
+> not true
+
